@@ -1,13 +1,13 @@
-function validateLenght(element, minLength, maxLength) {
-  if (element.length >= minLength && element.length <= maxLength) {
+function validateLenght(elementValue, minLength, maxLength) {
+  if (elementValue.length >= minLength && elementValue.length <= maxLength) {
      return true;    
   }
     return false;
 }
 
-function validateLetters(element) {
+function validateLetters(elementValue) {
   const regex = /^[A-Za-z\s]*$/i;
-  if (regex.test(element)) {
+  if (regex.test(elementValue)) {
     return true;
   }
     return false;

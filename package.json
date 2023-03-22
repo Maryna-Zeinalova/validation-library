@@ -1,0 +1,22 @@
+{
+  "name": "mz-form-validation",
+  "version": "1.0.0",
+  "description": "my first validation library",
+  "main": "validationLibrary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maryna-Zeinalova/validation-library.git"
+  },
+  "keywords": [
+    "validation"
+  ],
+  "author": "Maryna Zeinalova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maryna-Zeinalova/validation-library/issues"
+  },
+  "homepage": "https://github.com/Maryna-Zeinalova/validation-library#readme"
+}
