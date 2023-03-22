@@ -1,11 +1,11 @@
-function validateLenght(elementValue, minLength, maxLength) {
+export function validateLenght(elementValue, minLength, maxLength) {
   if (elementValue.length >= minLength && elementValue.length <= maxLength) {
      return true;    
   }
     return false;
 }
 
-function validateLetters(elementValue) {
+export function validateLetters(elementValue) {
   const regex = /^[A-Za-z\s]*$/i;
   if (regex.test(elementValue)) {
     return true;
@@ -13,7 +13,7 @@ function validateLetters(elementValue) {
     return false;
 }
 
-function validateNumbers(phoneNumber) {
+export function validateNumbers(phoneNumber) {
   const regex = /^\d+$/;
   if (regex.test(phoneNumber)) {
     return true;
@@ -21,7 +21,7 @@ function validateNumbers(phoneNumber) {
     return false;
 }
 
-function validateEmail(emailAddress) {
+export function validateEmail(emailAddress) {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (regex.test(emailAddress.trim())) {
     return true;
@@ -30,7 +30,7 @@ function validateEmail(emailAddress) {
 }
 
 //Password should contain at least one uppercase letter,one lowercase letter, one digit, one special symbol, more than 4 character
-function validatePassword(password) {
+export function validatePassword(password) {
   if (
     /[A-Z]/.test(password) &&
     /[a-z]/.test(password) &&
